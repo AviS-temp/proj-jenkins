@@ -1,0 +1,27 @@
+2022-11-13 11:00:51 - Starting OnlineVotingSystemApplication using Java 17.0.4.1 on OneInDark with PID 21732 (C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem\target\classes started by Abhis in C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem)
+2022-11-13 11:00:51 - No active profile set, falling back to 1 default profile: "default"
+2022-11-13 11:00:51 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-13 11:00:51 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-13 11:00:52 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-13 11:00:52 - Finished Spring Data repository scanning in 145 ms. Found 7 JPA repository interfaces.
+2022-11-13 11:00:53 - Tomcat initialized with port(s): 2700 (http)
+2022-11-13 11:00:53 - Starting service [Tomcat]
+2022-11-13 11:00:53 - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-13 11:00:54 - Initializing Spring embedded WebApplicationContext
+2022-11-13 11:00:54 - Root WebApplicationContext: initialization completed in 2858 ms
+2022-11-13 11:00:54 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-13 11:00:54 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-13 11:00:55 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-13 11:00:55 - HikariPool-1 - Starting...
+2022-11-13 11:00:55 - HikariPool-1 - Start completed.
+2022-11-13 11:00:55 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-13 11:00:57 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-13 11:00:57 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-13 11:00:58 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-13 11:00:59 - LiveReload server is running on port 35729
+2022-11-13 11:00:59 - Tomcat started on port(s): 2700 (http) with context path ''
+2022-11-13 11:00:59 - Started OnlineVotingSystemApplication in 8.245 seconds (JVM running for 9.894)
+2022-11-13 11:02:24 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-13 11:02:24 - Initializing Servlet 'dispatcherServlet'
+2022-11-13 11:02:24 - Completed initialization in 2 ms
+2022-11-13 11:02:25 - Voter logged in
