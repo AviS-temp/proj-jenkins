@@ -75,3 +75,193 @@
 2022-11-13 15:27:18 - Voter fetched through VoterIdCard
 2022-11-13 15:27:18 - votedlist added..
 2022-11-13 15:27:18 - Resolved [org.society.exceptions.VotedListAlreadyExistsException: You have voted already!!]
+2022-11-13 15:45:39 - Voter fetched through VoterIdCard
+2022-11-13 15:45:39 - votedlist added..
+2022-11-13 15:46:23 - Voter fetched through VoterIdCard
+2022-11-13 15:46:23 - votedlist added..
+2022-11-13 15:48:16 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-11-13 15:48:16 - Stopping service [Tomcat]
+2022-11-13 15:48:16 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-13 15:48:16 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-13 15:48:16 - HikariPool-1 - Shutdown initiated...
+2022-11-13 15:48:16 - HikariPool-1 - Shutdown completed.
+2022-11-13 15:48:16 - Starting OnlineVotingSystemApplication using Java 17.0.4.1 on OneInDark with PID 41844 (C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem\target\classes started by Abhis in C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem)
+2022-11-13 15:48:16 - No active profile set, falling back to 1 default profile: "default"
+2022-11-13 15:48:17 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-13 15:48:17 - Finished Spring Data repository scanning in 28 ms. Found 7 JPA repository interfaces.
+2022-11-13 15:48:17 - Tomcat initialized with port(s): 2700 (http)
+2022-11-13 15:48:17 - Starting service [Tomcat]
+2022-11-13 15:48:17 - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-13 15:48:17 - Initializing Spring embedded WebApplicationContext
+2022-11-13 15:48:17 - Root WebApplicationContext: initialization completed in 411 ms
+2022-11-13 15:48:17 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-13 15:48:17 - HikariPool-2 - Starting...
+2022-11-13 15:48:17 - HikariPool-2 - Start completed.
+2022-11-13 15:48:17 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-13 15:48:17 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-13 15:48:17 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-13 15:48:17 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-13 15:48:17 - LiveReload server is running on port 35729
+2022-11-13 15:48:17 - Tomcat started on port(s): 2700 (http) with context path ''
+2022-11-13 15:48:17 - Started OnlineVotingSystemApplication in 1.036 seconds (JVM running for 1544.705)
+2022-11-13 15:48:17 - Condition evaluation unchanged
+2022-11-13 15:49:39 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-11-13 15:49:39 - Stopping service [Tomcat]
+2022-11-13 15:49:39 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-13 15:49:39 - HikariPool-2 - Shutdown initiated...
+2022-11-13 15:49:39 - HikariPool-2 - Shutdown completed.
+2022-11-13 15:49:40 - Starting OnlineVotingSystemApplication using Java 17.0.4.1 on OneInDark with PID 41844 (C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem\target\classes started by Abhis in C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem)
+2022-11-13 15:49:40 - No active profile set, falling back to 1 default profile: "default"
+2022-11-13 15:49:40 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-13 15:49:40 - Finished Spring Data repository scanning in 26 ms. Found 7 JPA repository interfaces.
+2022-11-13 15:49:40 - Tomcat initialized with port(s): 2700 (http)
+2022-11-13 15:49:40 - Starting service [Tomcat]
+2022-11-13 15:49:40 - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-13 15:49:40 - Initializing Spring embedded WebApplicationContext
+2022-11-13 15:49:40 - Root WebApplicationContext: initialization completed in 247 ms
+2022-11-13 15:49:40 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-13 15:49:40 - HikariPool-3 - Starting...
+2022-11-13 15:49:40 - HikariPool-3 - Start completed.
+2022-11-13 15:49:40 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-13 15:49:40 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-13 15:49:40 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-13 15:49:40 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-13 15:49:40 - LiveReload server is running on port 35729
+2022-11-13 15:49:40 - Tomcat started on port(s): 2700 (http) with context path ''
+2022-11-13 15:49:40 - Started OnlineVotingSystemApplication in 0.745 seconds (JVM running for 1627.562)
+2022-11-13 15:49:40 - Condition evaluation unchanged
+2022-11-13 15:50:03 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-11-13 15:50:03 - Stopping service [Tomcat]
+2022-11-13 15:50:03 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-13 15:50:03 - HikariPool-3 - Shutdown initiated...
+2022-11-13 15:50:03 - HikariPool-3 - Shutdown completed.
+2022-11-13 15:50:03 - Starting OnlineVotingSystemApplication using Java 17.0.4.1 on OneInDark with PID 41844 (C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem\target\classes started by Abhis in C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem)
+2022-11-13 15:50:03 - No active profile set, falling back to 1 default profile: "default"
+2022-11-13 15:50:03 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-13 15:50:03 - Finished Spring Data repository scanning in 19 ms. Found 7 JPA repository interfaces.
+2022-11-13 15:50:03 - Tomcat initialized with port(s): 2700 (http)
+2022-11-13 15:50:03 - Starting service [Tomcat]
+2022-11-13 15:50:03 - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-13 15:50:04 - Initializing Spring embedded WebApplicationContext
+2022-11-13 15:50:04 - Root WebApplicationContext: initialization completed in 212 ms
+2022-11-13 15:50:04 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-13 15:50:04 - HikariPool-4 - Starting...
+2022-11-13 15:50:04 - HikariPool-4 - Start completed.
+2022-11-13 15:50:04 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-13 15:50:04 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-13 15:50:04 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-13 15:50:04 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-13 15:50:04 - LiveReload server is running on port 35729
+2022-11-13 15:50:04 - Tomcat started on port(s): 2700 (http) with context path ''
+2022-11-13 15:50:04 - Started OnlineVotingSystemApplication in 0.687 seconds (JVM running for 1651.242)
+2022-11-13 15:50:04 - Condition evaluation unchanged
+2022-11-13 15:50:11 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-11-13 15:50:11 - Stopping service [Tomcat]
+2022-11-13 15:50:11 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-13 15:50:11 - HikariPool-4 - Shutdown initiated...
+2022-11-13 15:50:11 - HikariPool-4 - Shutdown completed.
+2022-11-13 15:50:11 - Starting OnlineVotingSystemApplication using Java 17.0.4.1 on OneInDark with PID 41844 (C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem\target\classes started by Abhis in C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem)
+2022-11-13 15:50:11 - No active profile set, falling back to 1 default profile: "default"
+2022-11-13 15:50:11 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-13 15:50:11 - Finished Spring Data repository scanning in 22 ms. Found 7 JPA repository interfaces.
+2022-11-13 15:50:11 - Tomcat initialized with port(s): 2700 (http)
+2022-11-13 15:50:11 - Starting service [Tomcat]
+2022-11-13 15:50:11 - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-13 15:50:11 - Initializing Spring embedded WebApplicationContext
+2022-11-13 15:50:11 - Root WebApplicationContext: initialization completed in 217 ms
+2022-11-13 15:50:11 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-13 15:50:11 - HikariPool-5 - Starting...
+2022-11-13 15:50:11 - HikariPool-5 - Start completed.
+2022-11-13 15:50:11 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-13 15:50:11 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-13 15:50:11 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-13 15:50:11 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-13 15:50:11 - LiveReload server is running on port 35729
+2022-11-13 15:50:11 - Tomcat started on port(s): 2700 (http) with context path ''
+2022-11-13 15:50:11 - Started OnlineVotingSystemApplication in 0.607 seconds (JVM running for 1658.474)
+2022-11-13 15:50:11 - Condition evaluation unchanged
+2022-11-13 15:50:28 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-11-13 15:50:28 - Stopping service [Tomcat]
+2022-11-13 15:50:28 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-13 15:50:28 - HikariPool-5 - Shutdown initiated...
+2022-11-13 15:50:28 - HikariPool-5 - Shutdown completed.
+2022-11-13 15:50:28 - Starting OnlineVotingSystemApplication using Java 17.0.4.1 on OneInDark with PID 41844 (C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem\target\classes started by Abhis in C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem)
+2022-11-13 15:50:28 - No active profile set, falling back to 1 default profile: "default"
+2022-11-13 15:50:28 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-13 15:50:28 - Finished Spring Data repository scanning in 26 ms. Found 7 JPA repository interfaces.
+2022-11-13 15:50:29 - Tomcat initialized with port(s): 2700 (http)
+2022-11-13 15:50:29 - Starting service [Tomcat]
+2022-11-13 15:50:29 - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-13 15:50:29 - Initializing Spring embedded WebApplicationContext
+2022-11-13 15:50:29 - Root WebApplicationContext: initialization completed in 310 ms
+2022-11-13 15:50:29 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-13 15:50:29 - HikariPool-6 - Starting...
+2022-11-13 15:50:29 - HikariPool-6 - Start completed.
+2022-11-13 15:50:29 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-13 15:50:29 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-13 15:50:29 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-13 15:50:29 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-13 15:50:29 - LiveReload server is running on port 35729
+2022-11-13 15:50:29 - Tomcat started on port(s): 2700 (http) with context path ''
+2022-11-13 15:50:29 - Started OnlineVotingSystemApplication in 0.915 seconds (JVM running for 1676.396)
+2022-11-13 15:50:29 - Condition evaluation unchanged
+2022-11-13 15:50:47 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-11-13 15:50:47 - Stopping service [Tomcat]
+2022-11-13 15:50:47 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-13 15:50:47 - HikariPool-6 - Shutdown initiated...
+2022-11-13 15:50:47 - HikariPool-6 - Shutdown completed.
+2022-11-13 15:50:47 - Starting OnlineVotingSystemApplication using Java 17.0.4.1 on OneInDark with PID 41844 (C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem\target\classes started by Abhis in C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem)
+2022-11-13 15:50:47 - No active profile set, falling back to 1 default profile: "default"
+2022-11-13 15:50:47 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-13 15:50:47 - Finished Spring Data repository scanning in 29 ms. Found 7 JPA repository interfaces.
+2022-11-13 15:50:47 - Tomcat initialized with port(s): 2700 (http)
+2022-11-13 15:50:47 - Starting service [Tomcat]
+2022-11-13 15:50:47 - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-13 15:50:47 - Initializing Spring embedded WebApplicationContext
+2022-11-13 15:50:47 - Root WebApplicationContext: initialization completed in 299 ms
+2022-11-13 15:50:47 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-13 15:50:47 - HikariPool-7 - Starting...
+2022-11-13 15:50:48 - HikariPool-7 - Start completed.
+2022-11-13 15:50:48 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-13 15:50:48 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-13 15:50:48 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-13 15:50:48 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-13 15:50:48 - LiveReload server is running on port 35729
+2022-11-13 15:50:48 - Tomcat started on port(s): 2700 (http) with context path ''
+2022-11-13 15:50:48 - Started OnlineVotingSystemApplication in 0.87 seconds (JVM running for 1695.279)
+2022-11-13 15:50:48 - Condition evaluation unchanged
+2022-11-13 15:51:51 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-13 15:51:51 - Initializing Servlet 'dispatcherServlet'
+2022-11-13 15:51:51 - Completed initialization in 2 ms
+2022-11-13 15:51:51 - Voter fetched through VoterIdCard
+2022-11-13 15:51:52 - votedlist added..
+2022-11-13 15:53:54 - Voter logged in
+2022-11-13 15:53:59 - Voter fetched through VoterIdCard
+2022-11-13 15:53:59 - votedlist added..
+2022-11-13 15:55:48 - Voter fetched through VoterIdCard
+2022-11-13 15:55:48 - votedlist added..
+2022-11-13 15:56:19 - Voter fetched through VoterIdCard
+2022-11-13 15:56:19 - votedlist added..
+2022-11-13 15:56:19 - Resolved [org.society.exceptions.VotedListAlreadyExistsException: You have voted already!!]
+2022-11-13 15:56:30 - Voter fetched through VoterIdCard
+2022-11-13 15:56:30 - votedlist added..
+2022-11-13 15:57:31 - Voter fetched through VoterIdCard
+2022-11-13 15:57:31 - votedlist added..
+2022-11-13 16:15:51 - User logged in..
+2022-11-13 16:16:12 - Officer added
+2022-11-13 16:16:16 - List of nominated candidates viewed
+2022-11-13 16:16:18 - Voter list viewed !!
+2022-11-13 16:28:46 - List of nominated candidates viewed
+2022-11-13 16:28:46 - Voter list viewed !!
+2022-11-13 16:28:48 - List of nominated candidates viewed
+2022-11-13 16:28:48 - Voter list viewed !!
+2022-11-13 16:30:26 - Voter list viewed !!
+2022-11-13 16:30:26 - List of nominated candidates viewed
+2022-11-13 16:33:15 - List of nominated candidates viewed
+2022-11-13 16:33:15 - Voter list viewed !!
+2022-11-13 16:40:28 - List of nominated candidates viewed
+2022-11-13 16:40:28 - Voter list viewed !!
+2022-11-13 16:44:00 - Voter list viewed !!
+2022-11-13 16:44:00 - List of nominated candidates viewed
+2022-11-13 16:44:11 - Voter list viewed !!
+2022-11-13 16:44:11 - List of nominated candidates viewed

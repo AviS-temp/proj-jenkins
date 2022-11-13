@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { mergeScan } from 'rxjs';
+import { NominatedCandidates } from 'src/app/model/nominated-candidates';
+import { RegisteredSocietyVoters } from 'src/app/model/registered-society-voters';
+import { NomineeServiceService } from 'src/app/services/nominee-service.service';
+import { VoterServicesService } from 'src/app/services/voter-services.service';
 
 @Component({
   selector: 'app-officer-welcome',
@@ -8,7 +13,11 @@ import { Router } from '@angular/router';
 })
 export class OfficerWelcomeComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  totalCandidates:NominatedCandidates[];
+  totalVoters:RegisteredSocietyVoters[];
+  totalC:number;
+  totalV:number;
+  constructor(private router:Router, private serv:NomineeServiceService, private service:VoterServicesService) { }
 
   ngOnInit(): void {
   }
@@ -27,6 +36,27 @@ export class OfficerWelcomeComponent implements OnInit {
   viewCandidates()
   {
     this.router.navigate(['/viewcandidatebyofficer']);
+  }
+
+  announce()
+  {
+    this.serv.getCandidates().subscribe(
+      res=>
+      {
+        this.totalCandidates = res;
+        this.totalC = this.totalCandidates.length;
+      }
+    )
+    this.service.getAllVoters().subscribe(
+      res=>
+      {
+        this.totalVoters = res;
+        this.totalV = this.totalVoters.length;
+      }
+    )
+    var Box = document.getElementById("msg") as HTMLInputElement;
+    Box.style.display = "block";
+    
   }
 
 }

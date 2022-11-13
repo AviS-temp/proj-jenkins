@@ -12,10 +12,13 @@ public class VotedList {
 	private int id;
 	
 	/*5 November*/
-	private Date pollingDateTime;
+	// Changed to string
+	private String pollingDateTime;
 	
-	@ManyToOne
-	private CooperativeSociety society;
+	// 13 November
+	/*
+	 * @ManyToOne private CooperativeSociety society;
+	 */
 	// 7 November
 	// Changed to MERGE as, detached entity type error  
 	
@@ -68,21 +71,21 @@ public class VotedList {
 		this.id = id;
 	}
 
-	public Date getPollingDateTime() {
+	// 13 Nov - changed to string
+	public String getPollingDateTime() {
 		return pollingDateTime;
 	}
 
-	public void setPollingDateTime(Date pollingDateTime) {
+	public void setPollingDateTime(String pollingDateTime) {
 		this.pollingDateTime = pollingDateTime;
 	}
 
-	public CooperativeSociety getSociety() {
-		return society;
-	}
-
-	public void setSociety(CooperativeSociety society) {
-		this.society = society;
-	}
+	/*
+	 * public CooperativeSociety getSociety() { return society; }
+	 * 
+	 * public void setSociety(CooperativeSociety society) { this.society = society;
+	 * }
+	 */
 
 //	public RegisteredSocietyVoters getVoter() {
 //		return voter;

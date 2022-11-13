@@ -4,7 +4,7 @@ import { RegisteredSocietyVoters } from "./registered-society-voters";
 
 export class VotedList {
     public Id: number;
-    public pollingDateTime: Date;
+    public pollingDateTime: string; // changed to string
 
     //13 Nov
     // public society:CooperativeSociety = new CooperativeSociety();

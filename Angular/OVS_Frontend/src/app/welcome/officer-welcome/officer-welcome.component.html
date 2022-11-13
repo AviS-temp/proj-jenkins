@@ -5,6 +5,14 @@
   <button type="submit" class="btn btn-dark" (click)="viewCandidates()">
     CANDIDATES
   </button>
+  <button id="announce" type="submit" class="btn btn-info" (click)="announce()">
+    ANNOUNCE
+  </button>
+  <div class="announce" style="display: none" id="msg">
+    <h1>Elections Announced</h1>
+    <h2>Total Candidates - {{ totalC }}</h2>
+    <h2>Total Voters - {{ totalV }}</h2>
+  </div>
 </div>
 
 <footer class="officer-logout">

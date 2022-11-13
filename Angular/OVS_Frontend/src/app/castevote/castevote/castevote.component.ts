@@ -63,6 +63,8 @@ export class CastevoteComponent implements OnInit {
     this.votedlist.candidateId= this.candidate.candidateId;
     console.log(this.votedlist.candidateId);
     this.voterIdCardNo = this.route.snapshot.params['voterIdCardNo'];
+    // 13 Nov - for polling time
+
   this.serv.getVoterByVoterId(this.voterIdCardNo).subscribe(
     res=>
     {
@@ -70,6 +72,9 @@ export class CastevoteComponent implements OnInit {
       this.votedlist.voterId = res.id;
       // this.votedlist.voter=this.voter;
       this.votedlist.societyId=res.society.societyId;
+      let date:Date = new Date();
+
+      this.votedlist.pollingDateTime = date.getDate()+"-"+date.getMonth()+"-"+date.getFullYear()+"::"+date.getHours()+":"+date.getMinutes();
       console.log(this.votedlist.societyId);
       console.log(this.voter);
       console.log(this.candidate.candidateId);
