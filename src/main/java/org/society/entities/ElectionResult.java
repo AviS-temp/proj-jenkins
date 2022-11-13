@@ -17,9 +17,11 @@ public class ElectionResult {
 	private Date pollingDate;
 	
 	/*7 November */
-	@JsonManagedReference
-	@OneToMany(mappedBy = "electionResult", cascade = CascadeType.ALL)
-	private List<NominatedCandidates> candidate;
+	
+	// 13 November
+//	@JsonManagedReference
+//	@OneToMany(mappedBy = "electionResult", cascade = CascadeType.ALL)
+//	private List<NominatedCandidates> candidate;
 	
 	// 10 November changed
 	private String societyName;
@@ -47,13 +49,13 @@ public class ElectionResult {
 		this.pollingDate = pollingDate;
 	}
 	
-	public List<NominatedCandidates> getCandidate() {
-		return candidate;
-	}
-
-	public void setCandidate(List<NominatedCandidates> candidate) {
-		this.candidate = candidate;
-	}
+//	public List<NominatedCandidates> getCandidate() {
+//		return candidate;
+//	}
+//
+//	public void setCandidate(List<NominatedCandidates> candidate) {
+//		this.candidate = candidate;
+//	}
 
 	public String getSocietyName() {
 		return societyName;

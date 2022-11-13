@@ -36,10 +36,12 @@ export class VoterWelcomeComponent implements OnInit {
     this.router.navigate(['/nominee-register']);
   }
 
-  vote()
-  {
+// 13 Nov
+vote(voterIdCardNo:string)
+{
+  this.router.navigate(['/casteVote',localStorage.getItem("VoterId")]);
 
-  }
+}
 
   myFunction() {
     // Get the checkbox

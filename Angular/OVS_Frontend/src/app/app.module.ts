@@ -35,6 +35,7 @@ import { ViewCandidatesComponent } from './view/view-candidates/view-candidates.
 import { ViewCandidatesOfficerComponent } from './view/view-candidates-officer/view-candidates-officer.component';
 import { UpdateCandidateComponent } from './update/update-candidate/update-candidate.component';
 import { DeleteUserComponent } from './delete/delete-user/delete-user.component';
+import { CastevoteComponent } from './castevote/castevote/castevote.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +69,7 @@ import { DeleteUserComponent } from './delete/delete-user/delete-user.component'
     ViewCandidatesOfficerComponent,
     UpdateCandidateComponent,
     DeleteUserComponent,
+    CastevoteComponent,
   ],
   imports: [
     BrowserModule,

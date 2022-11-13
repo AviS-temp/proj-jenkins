@@ -50,8 +50,10 @@ public class RegisteredSocietyVoters {
 	//private int nominatedCandidates;
 	
 	// 7 November
-	@OneToOne(cascade = CascadeType.ALL)
-	private VotedList votedList;
+	
+	// 13 November
+//	@OneToOne(cascade = CascadeType.ALL)
+//	private VotedList votedList;
 	
 	private boolean castedVote;
 	
@@ -196,13 +198,15 @@ public class RegisteredSocietyVoters {
 	 * public void setNominatedCandidates(NominatedCandidates nominatedCandidates) {
 	 * this.nominatedCandidates = nominatedCandidates; }
 	 */
-	public VotedList getVotedList() {
-		return votedList;
-	}
-
-	public void setVotedList(VotedList votedList) {
-		this.votedList = votedList;
-	}
+	
+	// 13 November
+//	public VotedList getVotedList() {
+//		return votedList;
+//	}
+//
+//	public void setVotedList(VotedList votedList) {
+//		this.votedList = votedList;
+//	}
 	
 	
 	

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CastevoteComponent } from './castevote/castevote/castevote.component';
 import { DeleteUserComponent } from './delete/delete-user/delete-user.component';
 import { OfficerForgetComponent } from './forget/officer-forget/officer-forget.component';
 import { UserForgetComponent } from './forget/user-forget/user-forget.component';
@@ -59,7 +60,8 @@ const routes: Routes = [
   {path:'viewCandidates',component:ViewCandidatesComponent},
   {path:'viewcandidatebyofficer',component:ViewCandidatesOfficerComponent},
   {path:'updateCandidate/:candidateId',component:UpdateCandidateComponent},
-  {path:'deleteUser',component:DeleteUserComponent}
+  {path:'deleteUser',component:DeleteUserComponent},
+  {path:'casteVote/:voterIdCardNo',component:CastevoteComponent}
 ];
 
 @NgModule({

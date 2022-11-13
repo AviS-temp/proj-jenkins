@@ -1,13 +1,15 @@
 //November 8 - Suyog's Code
 package org.society.dao;
 
+import java.util.ArrayList;
 import java.util.List;
 
-
+import org.society.entities.CooperativeSociety;
 import org.society.entities.NominatedCandidates;
 import org.society.entities.RegisteredSocietyVoters;
 import org.society.exceptions.NominatedCandidateAlreadyExistsException;
 import org.society.exceptions.NominatedCandidateNotFoundException;
+import org.society.repository.CooperativeSocietyRepository;
 import org.society.repository.NominatedCandidatesRepository;
 import org.society.repository.RegisteredSocietyVotersRepository;
 import org.society.service.NominatedCandidatesService;
@@ -23,6 +25,9 @@ public class NominatedCandidatesDao implements NominatedCandidatesService {
 	
 	@Autowired
 	private RegisteredSocietyVotersRepository regRepo;
+	
+	@Autowired
+	private CooperativeSocietyRepository coopRepo;
 	
 	@Override
 	public NominatedCandidates addNominatedCandidate(
@@ -90,6 +95,22 @@ public class NominatedCandidatesDao implements NominatedCandidatesService {
 	public NominatedCandidates addNominatedCandidate(NominatedCandidates candidate, int id) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+	
+	@Override
+	public List<NominatedCandidates> viewBySocietyName(String voterId) {
+		RegisteredSocietyVoters r = regRepo.findByVoterIdCardNo(voterId);
+		CooperativeSociety c = coopRepo.findById(r.getSociety().getSocietyId()).get();
+		List<NominatedCandidates> list = nominatedCandidatesRepository.findAll();
+		List<NominatedCandidates> list2 = new ArrayList<NominatedCandidates>();
+		for(NominatedCandidates n : list)
+		{
+			if(n.getSocietyName().equals(c.getSocietyName()))
+			{
+				list2.add(n);
+			}
+		}
+		return list2;
 	}
 	
 }

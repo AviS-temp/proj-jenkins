@@ -13,4 +13,5 @@ public interface NominatedCandidatesService {
 	public List<NominatedCandidates> viewNominatedCandidatesList();
 	public NominatedCandidates searchByCandidateId(int id);
 	NominatedCandidates addNominatedCandidate(NominatedCandidates candidate);
+	List<NominatedCandidates> viewBySocietyName(String voterId);
 }

@@ -18,11 +18,44 @@ public class VotedList {
 	private CooperativeSociety society;
 	// 7 November
 	// Changed to MERGE as, detached entity type error  
-	@OneToOne(cascade = CascadeType.ALL)
-	private RegisteredSocietyVoters voter;
-	@ManyToOne
-	private NominatedCandidates candidate;
 	
+	// 13 November
+	/*
+	 * @OneToOne(cascade = CascadeType.ALL) private RegisteredSocietyVoters voter;
+	 * 
+	 * @ManyToOne private NominatedCandidates candidate;
+	 */
+	
+	// 13 November
+	private int societyId;
+	private int voterId;
+	private int candidateId;
+	
+	
+	public int getSocietyId() {
+		return societyId;
+	}
+
+	public void setSocietyId(int societyId) {
+		this.societyId = societyId;
+	}
+
+	public int getVoterId() {
+		return voterId;
+	}
+
+	public void setVoterId(int voterId) {
+		this.voterId = voterId;
+	}
+
+	public int getCandidateId() {
+		return candidateId;
+	}
+
+	public void setCandidateId(int candidateId) {
+		this.candidateId = candidateId;
+	}
+
 	public VotedList() {
 		super();
 	}
@@ -51,19 +84,19 @@ public class VotedList {
 		this.society = society;
 	}
 
-	public RegisteredSocietyVoters getVoter() {
-		return voter;
-	}
-
-	public void setVoter(RegisteredSocietyVoters voter) {
-		this.voter = voter;
-	}
-
-	public NominatedCandidates getCandidate() {
-		return candidate;
-	}
-
-	public void setCandidate(NominatedCandidates candidate) {
-		this.candidate = candidate;
-	}
+//	public RegisteredSocietyVoters getVoter() {
+//		return voter;
+//	}
+//
+//	public void setVoter(RegisteredSocietyVoters voter) {
+//		this.voter = voter;
+//	}
+//
+//	public NominatedCandidates getCandidate() {
+//		return candidate;
+//	}
+//
+//	public void setCandidate(NominatedCandidates candidate) {
+//		this.candidate = candidate;
+//	}
 }

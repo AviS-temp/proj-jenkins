@@ -33,13 +33,18 @@ public class NominatedCandidates {
 	 */
 	
 	/*7 November*/
-	@JsonBackReference
-	@ManyToOne(cascade=CascadeType.ALL)
-	private ElectionResult electionResult;
 	
+	// 13 November
+//	@JsonBackReference
+//	@ManyToOne(cascade=CascadeType.ALL)
+//	private ElectionResult electionResult;
+//	
 	/*5 November*/
-	@OneToMany(mappedBy="candidate",cascade = CascadeType.ALL)
-	List<VotedList> votedList = new ArrayList<>();
+	// 13 November
+	/*
+	 * @OneToMany(mappedBy="candidate",cascade = CascadeType.ALL) List<VotedList>
+	 * votedList = new ArrayList<>();
+	 */
 	
 	public NominatedCandidates() {
 		super();
@@ -70,22 +75,17 @@ public class NominatedCandidates {
 	 * this.society_Voter = society_Voter; }
 	 */
 
-	public ElectionResult getElectionResult() {
-		return electionResult;
-	}
-
-	public void setElectionResult(ElectionResult electionResult) {
-		this.electionResult = electionResult;
-	}
-
-	public List<VotedList> getVotedList() {
-		return votedList;
-	}
-
-	public void setVotedList(List<VotedList> votedList) {
-		this.votedList = votedList;
-	}
-	
+	/*
+	 * public ElectionResult getElectionResult() { return electionResult; }
+	 * 
+	 * public void setElectionResult(ElectionResult electionResult) {
+	 * this.electionResult = electionResult; }
+	 * 
+	 * public List<VotedList> getVotedList() { return votedList; }
+	 * 
+	 * public void setVotedList(List<VotedList> votedList) { this.votedList =
+	 * votedList; }
+	 */
 	public String getFirstName() {
 		return firstName;
 	}

@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import org.society.entities.CooperativeSociety;
-import org.society.entities.ElectionResult;
+//import org.society.entities.ElectionResult;
 import org.society.entities.NominatedCandidates;
 import org.society.entities.RegisteredSocietyVoters;
 import org.society.entities.VotedList;
@@ -16,7 +16,7 @@ import org.society.exceptions.ElectionResultAlreadyExistsException;
 import org.society.exceptions.ElectionResultNotFoundException;
 import org.society.exceptions.NominatedCandidateNotFoundException;
 import org.society.repository.CooperativeSocietyRepository;
-import org.society.repository.ElectionResultRepository;
+//import org.society.repository.ElectionResultRepository;
 import org.society.repository.NominatedCandidatesRepository;
 import org.society.repository.RegisteredSocietyVotersRepository;
 import org.society.repository.VotedListRepository;
@@ -26,10 +26,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ElectionResultDao /* implements ElectionResultService */ {
+public class ElectionResultDao  implements ElectionResultService  {
 	
-	@Autowired
-	private ElectionResultRepository electionResultRepository;
+	/*@Autowired
+	private ElectionResultRepository electionResultRepository;*/
 	@Autowired
 	private NominatedCandidatesRepository nominatedCandidatesRepository;
 	@Autowired
@@ -92,8 +92,8 @@ public class ElectionResultDao /* implements ElectionResultService */ {
 			
 		}
 		
-	}
-	//8th Nov
+	}*/
+	//8th Nov//checked 13th nov
 	@Override
 	public double viewVotingPercentage() {// voted list  socity voters
 		
@@ -104,42 +104,53 @@ public class ElectionResultDao /* implements ElectionResultService */ {
 		
 	}
 	
-	@Override
-	public double viewCandidateVotingPercent(int candidateId) throws CastedVoteNotFoundException {
+	@Override//checked 13 nov
+	public double viewCandidateVotingPercent(int candidateId)  {
 		
-		 * long
-		 * t=this.votedListService.searchByNominatedCandidateId(candidateId).size();
-		 * List<RegisteredSocietyVoters> list1
-		 * =registeredSocietyVotersRepository.findAll(); int societyId=0; int
-		 * societyVotes=0; for(RegisteredSocietyVoters r:list1) {
-		 * if(r.getNominatedCandidates().getCandidateId()==candidateId) {
-		 * societyId=r.getSociety().getSocietyId(); } } List<VotedList> list
-		 * =votedListRepository.findAll(); for(VotedList r:list) {
-		 * if(r.getSociety().getSocietyId()==societyId) { societyVotes++; } } //long a=
-		 * votedListRepository.findAll().size(); return (t/societyVotes)*100; //neet to
-		 * confirm
-		 * r
-		 	
-		return 0;
+		List<VotedList> list=votedListRepository.findAll();
+		NominatedCandidates Obj=nominatedCandidatesRepository.findById(candidateId).get();
+		String name=Obj.getSocietyName();
+		CooperativeSociety c=cooperativeSocietyRepository.findBySocietyName(name);
+		int societyID=c.getSocietyId();
+		int candidateCounter=0;
+		int societyCounter=0;
+		for(VotedList v:list) {
+			if(v.getCandidateId()==candidateId) {
+				
+				candidateCounter++;
+			}
+			if(v.getSocietyId()==societyID) {
+				societyCounter++;
+			}
+		}
+		return (candidateCounter/societyCounter)*100;
+		
+		
+		
 		}
 	
-	
-	public int totalSocietyVotes(int candidateId) {
+	@Override//checked 13 th nov
+	public int totalSocietyVotes(String societyName) {
 		
-		 * List<RegisteredSocietyVoters> list1
-		 * =registeredSocietyVotersRepository.findAll(); int societyId=0; int
-		 * societyVotes=0; for(RegisteredSocietyVoters r:list1) {
-		 * if(r.getNominatedCandidates().getCandidateId()==candidateId) {
-		 * societyId=r.getSociety().getSocietyId(); } } List<VotedList> list
-		 * =votedListRepository.findAll(); for(VotedList r:list) {
-		 * if(r.getSociety().getSocietyId()==societyId) { societyVotes++; } } return
-		 * societyVotes;
-		 
-		return 0;
+		CooperativeSociety c=cooperativeSocietyRepository.findBySocietyName(societyName);
+		int societyID=c.getSocietyId();
+		List<VotedList> list=votedListRepository.findAll();
+		int societyCounter=0;
+		for(VotedList v:list) {
+			
+			if(v.getSocietyId()==societyID) {
+				societyCounter++;
+			}
+		}
+		return societyCounter;
+		
+		
+		
+		
 	}
-	@Override
+	@Override//checked 13 th nov
 	public HashMap<String, Integer> displayVotingStatistics() {
-		
+		// total voters, male , female, total society voters
 		HashMap<String, Integer> map = new HashMap<>();
 		
 		List<RegisteredSocietyVoters> votersList = registeredSocietyVotersRepository.findAll();
@@ -191,17 +202,17 @@ public class ElectionResultDao /* implements ElectionResultService */ {
 		
 	}
 	
-	@Override
-	public NominatedCandidates viewHighestVotingPercentCandidate() throws CastedVoteNotFoundException {
-		List<VotedList> list =votedListRepository.findAll();
-		List<Integer> Idlist=new ArrayList<>();
-		for(VotedList v:list) {
-			Idlist.add(v.getCandidate().getCandidateId());
-		}
+	@Override//checked 13 th nov
+	public NominatedCandidates viewHighestVotingPercentCandidate() {
+	List<NominatedCandidates> list=nominatedCandidatesRepository.findAll();
+	List<Integer> idList=new ArrayList();
+	for(NominatedCandidates n:list) {
+		idList.add(n.getCandidateId());
+	}
 		int finalId=0;
 		double max=0;
 		
-		for(int id:Idlist) {
+		for(int id:idList) {
 			double t=max;
 			max=Math.max(max,viewCandidateVotingPercent(id) ); 
 			if(t!=max) {
@@ -212,21 +223,20 @@ public class ElectionResultDao /* implements ElectionResultService */ {
 		
 	}
 	
-	@Override
-	public NominatedCandidates viewLowestVotingPercentCandidate() throws CastedVoteNotFoundException {
-		
-		List<VotedList> list =votedListRepository.findAll();
-		List<Integer> Idlist=new ArrayList<>();
-		for(VotedList v:list) {
-			Idlist.add(v.getCandidate().getCandidateId());
+	@Override//checked 13 th nov
+	public NominatedCandidates viewLowestVotingPercentCandidate()  {
+		List<NominatedCandidates> list=nominatedCandidatesRepository.findAll();
+		List<Integer> idList=new ArrayList();
+		for(NominatedCandidates n:list) {
+			idList.add(n.getCandidateId());
 		}
 		int finalId=0;
-		double max=125522;
+		double min=100;
 		
-		for(int id:Idlist) {
-			double t=max;
-			max=Math.min(max,viewCandidateVotingPercent(id) ); 
-			if(t!=max) {
+		for(int id:idList) {
+			double t=min;
+			min=Math.min(min,viewCandidateVotingPercent(id) ); 
+			if(t!=min) {
 				finalId=id;
 			}
 		}
@@ -238,7 +248,7 @@ public class ElectionResultDao /* implements ElectionResultService */ {
 	
 	
 	
-	@Override
+	@Override//checked 13 th nov
 	public HashMap<String, Double> displayPollingResult() {
 		
 		HashMap<String, Double> map = new HashMap<>();
@@ -269,7 +279,7 @@ public class ElectionResultDao /* implements ElectionResultService */ {
 			{
 				int j = m.get(c.getSocietyName());
 				
-				if(v.getSociety().getSocietyId()==c.getSocietyId())
+				if(v.getSocietyId()==c.getSocietyId())
 				{
 					if(map.containsKey(c.getSocietyName()))
 					{
@@ -287,19 +297,20 @@ public class ElectionResultDao /* implements ElectionResultService */ {
 			}
 			
 			for(NominatedCandidates n : candList)
-			{ int t=totalSocietyVotes(n.getCandidateId());
-				if(v.getCandidate().getCandidateId()==n.getCandidateId())
+			{
+				int t=totalSocietyVotes(n.getSocietyName());
+				if(v.getCandidateId()==n.getCandidateId())
 				{
-					if(map.containsKey(n.getSociety_Voter().getFirstName()))
+					if(map.containsKey(n.getFirstName()+" "+n.getLastName()))
 					{
-						double i = map.get(n.getSociety_Voter().getFirstName());
+						double i = map.get(n.getFirstName()+" "+n.getLastName());
 						i = (i*t)/100;
 						i = i+1;
-						map.put(n.getSociety_Voter().getFirstName(), (i*100)/t);
+						map.put(n.getFirstName()+" "+n.getLastName(), (i*100)/t);
 					}
 					else
 					{
-						map.put(n.getSociety_Voter().getFirstName(), 100.0/t);
+						map.put(n.getFirstName()+" "+n.getLastName(), 100.0/t);
 					}
 				}
 			}
@@ -316,5 +327,5 @@ public class ElectionResultDao /* implements ElectionResultService */ {
 	}
 	
 	
-*/
+
 }

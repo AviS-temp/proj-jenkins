@@ -45,4 +45,10 @@ export class NomineeServiceService {
     return this.http.put("http://localhost:2700/candidate/update/"+candidateId,candidate);
   }
 
+  // 13 Nov
+  public getCandidatesBySociety(voterId:string):Observable<any>
+  {
+    return this.http.get(`${this.baseUrl}/getList/${voterId}`);
+  }
+
 }

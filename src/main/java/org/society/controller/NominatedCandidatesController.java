@@ -10,6 +10,7 @@ import org.society.entities.NominatedCandidates;
 import org.society.entities.RegisteredSocietyVoters;
 import org.society.exceptions.NominatedCandidateAlreadyExistsException;
 import org.society.exceptions.NominatedCandidateNotFoundException;
+import org.society.service.NominatedCandidatesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
@@ -34,6 +35,10 @@ public class NominatedCandidatesController {
 	// Changed this
 	@Autowired
 	private NominatedCandidatesDao nDao;
+	
+	// 13 Nov
+	@Autowired
+	private NominatedCandidatesService service;
 	
 	// 11 November - Adding Loggers
 	Logger log=LoggerFactory.getLogger(NominatedCandidatesController.class);
@@ -64,6 +69,13 @@ public class NominatedCandidatesController {
 	public NominatedCandidates searchByCandidateId(@PathVariable int id) {
 		log.info("Nominated candidate viewed through Id");
 		return nDao.searchByCandidateId(id);
+	}
+	
+	// 13 Nov
+	@GetMapping(path = "/getList/{voterId}")
+	public List<NominatedCandidates> viewBySocietyName(@PathVariable String voterId) {
+		
+		return service.viewBySocietyName(voterId);
 	}
 
 }

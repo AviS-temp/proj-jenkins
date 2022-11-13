@@ -26,8 +26,12 @@ public class CooperativeSociety {
 	List<RegisteredSocietyVoters> registeredSocietyVoters = new ArrayList<>();
 	
 	/*7th November*/
-	@OneToMany(mappedBy="society", cascade = CascadeType.ALL)
-	List<VotedList> votedList = new ArrayList<>();
+	
+	//13 November
+	/*
+	 * @OneToMany(mappedBy="society", cascade = CascadeType.ALL) List<VotedList>
+	 * votedList = new ArrayList<>();
+	 */
 	
 	
 	
