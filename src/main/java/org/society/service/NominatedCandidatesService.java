@@ -12,6 +12,6 @@ public interface NominatedCandidatesService {
 	public int deleteNominatedCandididate(int candidateId);
 	public List<NominatedCandidates> viewNominatedCandidatesList();
 	public NominatedCandidates searchByCandidateId(int id);
-	NominatedCandidates addNominatedCandidate(NominatedCandidates candidate);
+	NominatedCandidates addNominatedCandidate(NominatedCandidates candidate) throws NominatedCandidateAlreadyExistsException;
 	List<NominatedCandidates> viewBySocietyName(String voterId);
 }

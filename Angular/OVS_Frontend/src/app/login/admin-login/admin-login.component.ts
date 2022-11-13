@@ -24,7 +24,10 @@ export class AdminLoginComponent implements OnInit {
     ||
     (this.user.email == "suyogshembale@gmail.com" && this.user.password == "suyog21")
     ||
-    (this.user.email == "khushalswami30@gmail.com" && this.user.password == "kks"))
+    (this.user.email == "khushalswami30@gmail.com" && this.user.password == "kks")
+    ||
+    (this.user.email == "saurabhjan14@gmail.com" && this.user.password == "saur"))
+
     {
       this.service.login(this.user).subscribe(
         res=>

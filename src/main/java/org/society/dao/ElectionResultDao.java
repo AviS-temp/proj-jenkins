@@ -112,21 +112,17 @@ public class ElectionResultDao  implements ElectionResultService  {
 		String name=Obj.getSocietyName();
 		CooperativeSociety c=cooperativeSocietyRepository.findBySocietyName(name);
 		int societyID=c.getSocietyId();
-		int candidateCounter=0;
-		int societyCounter=0;
+		double candidateCounter=0;
+		double societyCounter=0;
 		for(VotedList v:list) {
-			if(v.getCandidateId()==candidateId) {
-				
+			if(v.getCandidateId()==candidateId) {	
 				candidateCounter++;
 			}
 			if(v.getSocietyId()==societyID) {
 				societyCounter++;
 			}
 		}
-		return (candidateCounter/societyCounter)*100;
-		
-		
-		
+		return ((candidateCounter/societyCounter)*100);
 		}
 	
 	@Override//checked 13 th nov
@@ -205,7 +201,7 @@ public class ElectionResultDao  implements ElectionResultService  {
 	@Override//checked 13 th nov
 	public NominatedCandidates viewHighestVotingPercentCandidate() {
 	List<NominatedCandidates> list=nominatedCandidatesRepository.findAll();
-	List<Integer> idList=new ArrayList();
+	List<Integer> idList=new ArrayList<>();
 	for(NominatedCandidates n:list) {
 		idList.add(n.getCandidateId());
 	}
@@ -214,7 +210,7 @@ public class ElectionResultDao  implements ElectionResultService  {
 		
 		for(int id:idList) {
 			double t=max;
-			max=Math.max(max,viewCandidateVotingPercent(id) ); 
+			max=Math.max(max,viewCandidateVotingPercent(id)); 
 			if(t!=max) {
 				finalId=id;
 			}

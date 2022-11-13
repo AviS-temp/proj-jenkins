@@ -59,4 +59,9 @@ export class OfficerWelcomeComponent implements OnInit {
     
   }
 
+  viewResults()
+  {
+    this.router.navigate(['/results']);
+  }
+
 }

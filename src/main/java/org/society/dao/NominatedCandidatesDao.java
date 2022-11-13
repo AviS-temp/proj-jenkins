@@ -30,14 +30,21 @@ public class NominatedCandidatesDao implements NominatedCandidatesService {
 	private CooperativeSocietyRepository coopRepo;
 	
 	@Override
-	public NominatedCandidates addNominatedCandidate(
-			NominatedCandidates candidate/* , int id */) 
+	public NominatedCandidates addNominatedCandidate(NominatedCandidates candidate/* , int id */) throws NominatedCandidateAlreadyExistsException 
 	{
 		
 		NominatedCandidates nc = nominatedCandidatesRepository.findByNominationFormNo(candidate.getNominationFormNo());
 		{
-			NominatedCandidates nc1=nominatedCandidatesRepository.save(candidate);
-			//voter.getNominatedCandidates().setCandidateId(nc1.getCandidateId());
+			if(nc!=null)
+			{
+				throw new NominatedCandidateAlreadyExistsException("You are already a nominated candidate");
+			}
+			else
+			{
+				NominatedCandidates nc1=nominatedCandidatesRepository.save(candidate);
+				return nc1;
+			}
+				//voter.getNominatedCandidates().setCandidateId(nc1.getCandidateId());
 			
 			// 12 Nov - commented
 			/*
@@ -51,7 +58,7 @@ public class NominatedCandidatesDao implements NominatedCandidatesService {
 			// 12 Nov - commented
 			/* regRepo.save(v); */
 				
-			return nc1;
+			
 		}
 		
 	}

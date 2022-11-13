@@ -15,6 +15,7 @@ import { OfficerRegisterComponent } from './register/officer-register/officer-re
 import { SocietyRegisterComponent } from './register/society-register/society-register.component';
 import { UserRegisterComponent } from './register/user-register/user-register.component';
 import { VoterRegisterComponent } from './register/voter-register/voter-register.component';
+import { ResultsComponent } from './results/results/results.component';
 import { UpdateCandidateComponent } from './update/update-candidate/update-candidate.component';
 import { UpdateSocietyComponent } from './update/update-society/update-society.component';
 import { UpdateUserComponent } from './update/update-user/update-user.component';
@@ -61,7 +62,8 @@ const routes: Routes = [
   {path:'viewcandidatebyofficer',component:ViewCandidatesOfficerComponent},
   {path:'updateCandidate/:candidateId',component:UpdateCandidateComponent},
   {path:'deleteUser',component:DeleteUserComponent},
-  {path:'casteVote/:voterIdCardNo',component:CastevoteComponent}
+  {path:'casteVote/:voterIdCardNo',component:CastevoteComponent},
+  {path:'results',component:ResultsComponent}
 ];
 
 @NgModule({

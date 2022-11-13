@@ -4,6 +4,7 @@ import { EmailDetails } from 'src/app/model/email-details';
 import { RegisteredSocietyVoters } from 'src/app/model/registered-society-voters';
 import { VoterServicesService } from 'src/app/services/voter-services.service';
 import { ForgetPasswordService} from 'src/app/services/forget-password.service';
+import { CooperativeSociety } from 'src/app/model/cooperative-society';
 
 @Component({
   selector: 'app-voter-register',
@@ -15,9 +16,18 @@ export class VoterRegisterComponent implements OnInit {
   voter:RegisteredSocietyVoters = new RegisteredSocietyVoters();
   email:EmailDetails = new EmailDetails();
   warning:string=""; // Added Exceptions today - 11 Nov
+  coopSociety:CooperativeSociety[]; // 13 Nov
+  success_msg:string=""; // 13 Nov
   constructor(private service:VoterServicesService, private router:Router, private mailservice:ForgetPasswordService) { }
 
   ngOnInit(): void {
+    this.service.getAllSocieties().subscribe(
+      res=>
+      {
+        this.coopSociety=res;
+        //this.voter.society.societyId=this.coopSociety[0].societyId;
+      }
+    )
   }
 
   
@@ -30,7 +40,17 @@ export class VoterRegisterComponent implements OnInit {
       res=>
       {
         console.log(res);
-        alert("Voter Registered");
+
+        // 13 Nov
+        //alert("Voter Registered");
+       //this.success_msg = "Voter Registered";
+      //  setTimeout(
+      //   function() {
+      //     var box = document.getElementById('succ') as HTMLInputElement;
+      //     box.style.display='block';
+      //   }, 2000);
+
+
         this.email.recipient = this.voter.emailId;
         this.email.msgBody = this.voter.voterIdCardNo;
         this.email.subject = "Your Voter ID";
@@ -45,5 +65,7 @@ export class VoterRegisterComponent implements OnInit {
       }
     )
   }
+
+
 
 }

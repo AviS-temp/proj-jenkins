@@ -14,6 +14,8 @@ export class NomineeRegisterComponent implements OnInit {
   nominee:NominatedCandidates = new NominatedCandidates();
   voter:RegisteredSocietyVoters = new RegisteredSocietyVoters();
   id:number;
+  // 13 Nov
+  warning:string="";
   constructor(private service:VoterServicesService, private serv:NomineeServiceService) { }
 
   ngOnInit(): void {
@@ -42,7 +44,8 @@ export class NomineeRegisterComponent implements OnInit {
           },
           err=>
           {
-            console.log(err); 
+            console.log(err);
+            this.warning = err.error.errorMsg; 
           }
         )
       }

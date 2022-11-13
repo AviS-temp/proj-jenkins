@@ -46,7 +46,7 @@ public class NominatedCandidatesController {
 	//10th Nov
 	@PostMapping("/add")// /{id} is removed - 12 Nov
 	public NominatedCandidates addNominatedCandidate(
-			@RequestBody NominatedCandidates candidate/* , @PathVariable int id */) {
+			@RequestBody NominatedCandidates candidate/* , @PathVariable int id */) throws NominatedCandidateAlreadyExistsException {
 		log.info("Nominated Candidate Added");
 		return nDao.addNominatedCandidate(candidate/* ,id */);
 	}

@@ -11,6 +11,7 @@ export class VoterServicesService {
   voter:RegisteredSocietyVoters = new RegisteredSocietyVoters();
   private baseUrl = "http://localhost:2700/register";
   private mailUrl = "http://localhost:2700/mail";
+  private societyUrl = "http://localhost:2700/coop"; // 13 Nov
 
   // November 8
   constructor(private http:HttpClient) { }
@@ -40,6 +41,13 @@ export class VoterServicesService {
   {
     return this.http.get(`${this.baseUrl}/getAll`);
   }
+
+  // 13 Nov
+  public getAllSocieties():Observable<any>
+  {
+    return this.http.get(`${this.societyUrl}/getAll`);
+  }
+
 
 
   public deleteTheVoter(voterIdCardNo:string):Observable<any>
