@@ -55,7 +55,13 @@ export class VoterRegisterComponent implements OnInit {
         this.email.msgBody = this.voter.voterIdCardNo;
         this.email.subject = "Your Voter ID";
         this.mailservice.getPasswordUser(this.email).subscribe()
-        this.router.navigate(['/voter-login']);
+        // 14 Nov
+        this.success_msg = "Voter Registration Successful";
+        setTimeout(()=>
+        {
+          this.router.navigate(['/voter-login']);
+        },3000)
+        
       },
       err=>
       {

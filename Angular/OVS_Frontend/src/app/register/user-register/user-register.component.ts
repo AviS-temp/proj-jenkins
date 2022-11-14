@@ -11,6 +11,7 @@ import { UserServiceService } from 'src/app/services/user-service.service';
 export class UserRegisterComponent implements OnInit {
   user:User = new User();
   warning:string=""; // Added Exceptions today - 11 Nov
+  success_msg:string=""; // 13 Nov
 
   constructor(private service:UserServiceService,private router:Router) { }
 
@@ -23,8 +24,11 @@ export class UserRegisterComponent implements OnInit {
       res=>
       {
         console.log(res);
-        alert("User Registered");
-        this.router.navigate(['/user-login']);
+        //alert("User Registered");
+        this.success_msg = "Registration Successful";
+        setTimeout(()=>
+        {this.router.navigate(['/user-login']);},3000)
+        
       },
       err=>
       {
