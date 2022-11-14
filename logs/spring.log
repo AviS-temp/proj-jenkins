@@ -31,3 +31,240 @@
 2022-11-14 09:53:16 - All societies viewed
 2022-11-14 09:54:36 - All societies viewed
 2022-11-14 09:54:42 - All societies viewed
+2022-11-14 09:55:11 - New user added..
+2022-11-14 10:09:36 - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2022-11-14 10:09:36 - Stopping service [Tomcat]
+2022-11-14 10:09:36 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-14 10:09:36 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:09:36 - HikariPool-1 - Shutdown initiated...
+2022-11-14 10:09:36 - HikariPool-1 - Shutdown completed.
+2022-11-14 10:09:36 - Starting OnlineVotingSystemApplication using Java 17.0.4.1 on OneInDark with PID 12208 (C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem\target\classes started by Abhis in C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem)
+2022-11-14 10:09:36 - No active profile set, falling back to 1 default profile: "default"
+2022-11-14 10:09:37 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-14 10:09:37 - Finished Spring Data repository scanning in 29 ms. Found 7 JPA repository interfaces.
+2022-11-14 10:09:37 - Tomcat initialized with port(s): 2700 (http)
+2022-11-14 10:09:37 - Starting service [Tomcat]
+2022-11-14 10:09:37 - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-14 10:09:37 - Initializing Spring embedded WebApplicationContext
+2022-11-14 10:09:37 - Root WebApplicationContext: initialization completed in 609 ms
+2022-11-14 10:09:37 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-14 10:09:37 - HikariPool-2 - Starting...
+2022-11-14 10:09:37 - HikariPool-2 - Start completed.
+2022-11-14 10:09:37 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-14 10:09:37 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-14 10:09:37 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:09:38 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-14 10:09:38 - LiveReload server is running on port 35729
+2022-11-14 10:09:38 - Tomcat started on port(s): 2700 (http) with context path ''
+2022-11-14 10:09:38 - Started OnlineVotingSystemApplication in 1.618 seconds (JVM running for 1174.235)
+2022-11-14 10:09:38 - Condition evaluation unchanged
+2022-11-14 10:19:16 - Starting VotedListServiceTest using Java 17.0.4.1 on OneInDark with PID 7980 (started by Abhis in C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem)
+2022-11-14 10:19:16 - No active profile set, falling back to 1 default profile: "default"
+2022-11-14 10:19:16 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-14 10:19:17 - Finished Spring Data repository scanning in 98 ms. Found 7 JPA repository interfaces.
+2022-11-14 10:19:18 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-14 10:19:18 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-14 10:19:18 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-14 10:19:19 - HikariPool-1 - Starting...
+2022-11-14 10:19:19 - HikariPool-1 - Start completed.
+2022-11-14 10:19:19 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-14 10:19:20 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-14 10:19:20 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:19:21 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-14 10:19:22 - Started VotedListServiceTest in 6.444 seconds (JVM running for 8.567)
+2022-11-14 10:19:22 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:19:22 - HikariPool-1 - Shutdown initiated...
+2022-11-14 10:19:22 - HikariPool-1 - Shutdown completed.
+2022-11-14 10:21:10 - Starting VotedListServiceTest using Java 17.0.4.1 on OneInDark with PID 62312 (started by Abhis in C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem)
+2022-11-14 10:21:10 - No active profile set, falling back to 1 default profile: "default"
+2022-11-14 10:21:11 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-14 10:21:11 - Finished Spring Data repository scanning in 101 ms. Found 7 JPA repository interfaces.
+2022-11-14 10:21:12 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-14 10:21:12 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-14 10:21:12 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-14 10:21:12 - HikariPool-1 - Starting...
+2022-11-14 10:21:13 - HikariPool-1 - Start completed.
+2022-11-14 10:21:13 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-14 10:21:13 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-14 10:21:13 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:21:14 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-14 10:21:15 - Started VotedListServiceTest in 5.849 seconds (JVM running for 7.673)
+2022-11-14 10:21:15 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:21:15 - HikariPool-1 - Shutdown initiated...
+2022-11-14 10:21:15 - HikariPool-1 - Shutdown completed.
+2022-11-14 10:25:05 - Starting VotedListServiceTest using Java 17.0.4.1 on OneInDark with PID 52824 (started by Abhis in C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem)
+2022-11-14 10:25:05 - No active profile set, falling back to 1 default profile: "default"
+2022-11-14 10:25:05 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-14 10:25:05 - Finished Spring Data repository scanning in 102 ms. Found 7 JPA repository interfaces.
+2022-11-14 10:25:07 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-14 10:25:07 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-14 10:25:07 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-14 10:25:07 - HikariPool-1 - Starting...
+2022-11-14 10:25:08 - HikariPool-1 - Start completed.
+2022-11-14 10:25:08 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-14 10:25:08 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-14 10:25:08 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:25:10 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-14 10:25:10 - Started VotedListServiceTest in 6.236 seconds (JVM running for 8.13)
+2022-11-14 10:25:11 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:25:11 - HikariPool-1 - Shutdown initiated...
+2022-11-14 10:25:11 - HikariPool-1 - Shutdown completed.
+2022-11-14 10:26:41 - Starting VotedListServiceTest using Java 17.0.4.1 on OneInDark with PID 66388 (started by Abhis in C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem)
+2022-11-14 10:26:41 - No active profile set, falling back to 1 default profile: "default"
+2022-11-14 10:26:42 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-14 10:26:42 - Finished Spring Data repository scanning in 108 ms. Found 7 JPA repository interfaces.
+2022-11-14 10:26:43 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-14 10:26:43 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-14 10:26:44 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-14 10:26:44 - HikariPool-1 - Starting...
+2022-11-14 10:26:44 - HikariPool-1 - Start completed.
+2022-11-14 10:26:44 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-14 10:26:45 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-14 10:26:45 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:26:46 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-14 10:26:47 - Started VotedListServiceTest in 5.978 seconds (JVM running for 7.749)
+2022-11-14 10:26:47 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:26:47 - HikariPool-1 - Shutdown initiated...
+2022-11-14 10:26:47 - HikariPool-1 - Shutdown completed.
+2022-11-14 10:31:24 - Starting VotedListServiceTest using Java 17.0.4.1 on OneInDark with PID 25392 (started by Abhis in C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem)
+2022-11-14 10:31:24 - No active profile set, falling back to 1 default profile: "default"
+2022-11-14 10:31:25 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-14 10:31:25 - Finished Spring Data repository scanning in 106 ms. Found 7 JPA repository interfaces.
+2022-11-14 10:31:26 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-14 10:31:26 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-14 10:31:27 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-14 10:31:27 - HikariPool-1 - Starting...
+2022-11-14 10:31:27 - HikariPool-1 - Start completed.
+2022-11-14 10:31:27 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-14 10:31:28 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-14 10:31:28 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:31:29 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-14 10:31:30 - Started VotedListServiceTest in 6.05 seconds (JVM running for 7.822)
+2022-11-14 10:31:30 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:31:30 - HikariPool-1 - Shutdown initiated...
+2022-11-14 10:31:30 - HikariPool-1 - Shutdown completed.
+2022-11-14 10:32:36 - Starting VotedListServiceTest using Java 17.0.4.1 on OneInDark with PID 65504 (started by Abhis in C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem)
+2022-11-14 10:32:36 - No active profile set, falling back to 1 default profile: "default"
+2022-11-14 10:32:36 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-14 10:32:37 - Finished Spring Data repository scanning in 115 ms. Found 7 JPA repository interfaces.
+2022-11-14 10:32:38 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-14 10:32:38 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-14 10:32:38 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-14 10:32:38 - HikariPool-1 - Starting...
+2022-11-14 10:32:39 - HikariPool-1 - Start completed.
+2022-11-14 10:32:39 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-14 10:32:39 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-14 10:32:39 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:32:40 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-14 10:32:41 - Started VotedListServiceTest in 6.018 seconds (JVM running for 7.754)
+2022-11-14 10:32:41 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:32:41 - HikariPool-1 - Shutdown initiated...
+2022-11-14 10:32:41 - HikariPool-1 - Shutdown completed.
+2022-11-14 10:34:11 - Starting VotedListServiceTest using Java 17.0.4.1 on OneInDark with PID 1320 (started by Abhis in C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem)
+2022-11-14 10:34:11 - No active profile set, falling back to 1 default profile: "default"
+2022-11-14 10:34:12 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-14 10:34:12 - Finished Spring Data repository scanning in 96 ms. Found 7 JPA repository interfaces.
+2022-11-14 10:34:13 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-14 10:34:13 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-14 10:34:14 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-14 10:34:14 - HikariPool-1 - Starting...
+2022-11-14 10:34:14 - HikariPool-1 - Start completed.
+2022-11-14 10:34:14 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-14 10:34:15 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-14 10:34:15 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:34:16 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-14 10:34:17 - Started VotedListServiceTest in 6.161 seconds (JVM running for 8.024)
+2022-11-14 10:34:17 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:34:17 - HikariPool-1 - Shutdown initiated...
+2022-11-14 10:34:17 - HikariPool-1 - Shutdown completed.
+2022-11-14 10:38:16 - Starting VotedListServiceTest using Java 17.0.4.1 on OneInDark with PID 65320 (started by Abhis in C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem)
+2022-11-14 10:38:16 - No active profile set, falling back to 1 default profile: "default"
+2022-11-14 10:38:17 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-14 10:38:17 - Finished Spring Data repository scanning in 111 ms. Found 7 JPA repository interfaces.
+2022-11-14 10:38:18 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-14 10:38:18 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-14 10:38:18 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-14 10:38:19 - HikariPool-1 - Starting...
+2022-11-14 10:38:19 - HikariPool-1 - Start completed.
+2022-11-14 10:38:19 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-14 10:38:20 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-14 10:38:20 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:38:21 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-14 10:38:21 - Started VotedListServiceTest in 5.946 seconds (JVM running for 7.947)
+2022-11-14 10:38:22 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:38:22 - HikariPool-1 - Shutdown initiated...
+2022-11-14 10:38:22 - HikariPool-1 - Shutdown completed.
+2022-11-14 10:42:38 - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1m30s569ms816µs600ns).
+2022-11-14 10:45:33 - Starting VotedListServiceTest using Java 17.0.4.1 on OneInDark with PID 24892 (started by Abhis in C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem)
+2022-11-14 10:45:33 - No active profile set, falling back to 1 default profile: "default"
+2022-11-14 10:45:34 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-14 10:45:34 - Finished Spring Data repository scanning in 120 ms. Found 7 JPA repository interfaces.
+2022-11-14 10:45:36 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-14 10:45:36 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-14 10:45:36 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-14 10:45:36 - HikariPool-1 - Starting...
+2022-11-14 10:45:36 - HikariPool-1 - Start completed.
+2022-11-14 10:45:36 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-14 10:45:37 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-14 10:45:37 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:45:38 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-14 10:45:39 - Started VotedListServiceTest in 6.988 seconds (JVM running for 8.907)
+2022-11-14 10:45:39 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:45:39 - HikariPool-1 - Shutdown initiated...
+2022-11-14 10:45:39 - HikariPool-1 - Shutdown completed.
+2022-11-14 10:45:59 - Starting VotedListServiceTest using Java 17.0.4.1 on OneInDark with PID 41548 (started by Abhis in C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem)
+2022-11-14 10:45:59 - No active profile set, falling back to 1 default profile: "default"
+2022-11-14 10:46:00 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-14 10:46:00 - Finished Spring Data repository scanning in 119 ms. Found 7 JPA repository interfaces.
+2022-11-14 10:46:02 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-14 10:46:02 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-14 10:46:02 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-14 10:46:02 - HikariPool-1 - Starting...
+2022-11-14 10:46:02 - HikariPool-1 - Start completed.
+2022-11-14 10:46:02 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-14 10:46:03 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-14 10:46:03 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:46:04 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-14 10:46:05 - Started VotedListServiceTest in 6.653 seconds (JVM running for 8.781)
+2022-11-14 10:46:05 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:46:05 - HikariPool-1 - Shutdown initiated...
+2022-11-14 10:46:05 - HikariPool-1 - Shutdown completed.
+2022-11-14 10:46:28 - Starting VotedListServiceTest using Java 17.0.4.1 on OneInDark with PID 68844 (started by Abhis in C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem)
+2022-11-14 10:46:28 - No active profile set, falling back to 1 default profile: "default"
+2022-11-14 10:46:28 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-14 10:46:29 - Finished Spring Data repository scanning in 107 ms. Found 7 JPA repository interfaces.
+2022-11-14 10:46:30 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-14 10:46:30 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-14 10:46:30 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-14 10:46:30 - HikariPool-1 - Starting...
+2022-11-14 10:46:31 - HikariPool-1 - Start completed.
+2022-11-14 10:46:31 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-14 10:46:31 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-14 10:46:31 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:46:32 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-14 10:46:33 - Started VotedListServiceTest in 5.843 seconds (JVM running for 7.94)
+2022-11-14 10:46:33 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:46:33 - HikariPool-1 - Shutdown initiated...
+2022-11-14 10:46:33 - HikariPool-1 - Shutdown completed.
+2022-11-14 10:47:47 - Starting VotedListServiceTest using Java 17.0.4.1 on OneInDark with PID 71244 (started by Abhis in C:\Users\Abhis\OneDrive\Documents\Spring(L1)\OnlineVotingSystem)
+2022-11-14 10:47:47 - No active profile set, falling back to 1 default profile: "default"
+2022-11-14 10:47:48 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-14 10:47:48 - Finished Spring Data repository scanning in 100 ms. Found 7 JPA repository interfaces.
+2022-11-14 10:47:49 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-14 10:47:50 - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-14 10:47:50 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-14 10:47:50 - HikariPool-1 - Starting...
+2022-11-14 10:47:50 - HikariPool-1 - Start completed.
+2022-11-14 10:47:50 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-14 10:47:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-14 10:47:51 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:47:52 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-14 10:47:53 - Started VotedListServiceTest in 7.022 seconds (JVM running for 8.988)
+2022-11-14 10:47:53 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 10:47:53 - HikariPool-1 - Shutdown initiated...
+2022-11-14 10:47:53 - HikariPool-1 - Shutdown completed.
+2022-11-14 11:02:24 - Application shutdown requested.
+2022-11-14 11:02:24 - Stopping service [Tomcat]
+2022-11-14 11:02:25 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 11:02:25 - HikariPool-2 - Shutdown initiated...
+2022-11-14 11:02:25 - HikariPool-2 - Shutdown completed.
